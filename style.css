@@ -2614,3 +2614,56 @@ button {
     width: 100%;
     height: auto;
 }
+
+/* ===== Mobile Balance & Hero Text Update (User Request) ===== */
+
+/* Mobile Layout Adjustments */
+@media (max-width: 768px) {
+    .hero-section {
+        padding-top: 120px !important; /* Increase top padding for mobile */
+        background-position: center top !important;
+        align-items: flex-start !important;
+        height: 100vh !important;
+    }
+    
+    .hero-content {
+        padding: 0 20px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-names-script {
+        font-size: 2.8rem !important; /* Balanced size for mobile */
+        margin-top: 15px !important;
+        line-height: 1.3 !important;
+    }
+    
+    .hero-badge {
+        font-size: 0.85rem !important;
+        margin-bottom: 10px !important;
+        padding: 6px 14px !important;
+    }
+}
+
+/* Hero Text Styling - "Chữ bên đầu chuyển về nền đen" */
+/* Badge: Black Background, White Text */
+.hero-badge {
+    background-color: #000 !important;
+    color: #fff !important;
+    border: 1px solid #000 !important;
+    padding: 8px 20px !important;
+    border-radius: 30px !important; /* Pill shape */
+    text-transform: uppercase;
+    letter-spacing: 2px !important;
+    font-weight: 500 !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2) !important;
+}
+
+/* Names: Black Text with White Glow (High Contrast) */
+.hero-names-script {
+    color: #000 !important;
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.9), 0 0 30px rgba(255, 255, 255, 0.7) !important;
+    font-weight: 400 !important;
+}
