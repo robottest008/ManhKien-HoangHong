@@ -65,7 +65,7 @@ function initMusicPlayer() {
         return;
     }
     let isPlaying = false;
-    const INTRO_SKIP_SECONDS = 10;
+    const INTRO_SKIP_SECONDS = 16;
 
     function skipIntroIfNeeded() {
         if (bgMusic.readyState >= 1) {
